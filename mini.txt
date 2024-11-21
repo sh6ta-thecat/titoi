@@ -1,0 +1,61 @@
+/sistema_inventario/
+│
+├── /css/                # Archivos de estilos (CSS)
+│   └── estilos.css      # Estilos globales para todo el sistema.
+│
+├── /js/                 # Archivos de scripts (JavaScript)
+│   └── scripts.js       # Scripts globales para validaciones o interactividad.
+│
+├── /bd/                 # Archivos relacionados con la base de datos
+│   └── conexion.php     # Archivo para la conexión con la base de datos.
+│
+├── /funciones/          # Funciones reutilizables
+│   ├── helpers.php      # Funciones comunes como validaciones, cálculos, etc.
+│   ├── administrador.php # Funciones específicas para el administrador.
+│   └── inventario.php   # Funciones relacionadas con el inventario.
+│
+├── /compartidos/        # Componentes compartidos
+│   ├── head.php         # Sección <head> compartida entre páginas.
+│   ├── header.php       # Cabecera común para todas las páginas.
+│   └── footer.php       # Pie de página común para todas las páginas.
+│
+├── /clientes/           # Módulo de clientes
+│   ├── nuevo.php        # Formulario para registrar nuevos clientes.
+│   ├── listar.php       # Listado y búsqueda de clientes.
+│   └── procesar.php     # Procesamiento de datos de clientes.
+│
+├── /productos/          # Módulo de productos
+│   ├── nuevo.php        # Formulario para registrar nuevos productos.
+│   ├── listar.php       # Listado y búsqueda de productos.
+│   ├── editar.php       # Edición de productos existentes.
+│   └── procesar.php     # Procesamiento de datos de productos.
+│
+├── /categorias/         # Módulo de categorías
+│   ├── nuevo.php       # Formulario para registrar nuevas categorías.
+│   ├── listar.php       # Listado de categorías existentes.
+│   └── procesar.php    # Procesamiento de datos de categorías.
+│
+├── /entradas/           # Módulo de entradas
+│   ├── nuevo.php        # Formulario para registrar nuevas entradas.
+│   ├── listar.php       # Listado de entradas registradas.
+│   └── procesar.php     # Procesamiento de datos de entradas.
+│
+├── /salidas/            # Módulo de salidas
+│   ├── nuevo.php        # Formulario para registrar nuevas salidas.
+│   ├── listar.php       # Listado de salidas registradas.
+│   └── procesar.php     # Procesamiento de datos de salidas.
+│
+├── /inventario/         # Gestión del inventario
+│   ├── index.php        # Página principal del módulo de inventario.
+│   ├── buscar.php       # Búsqueda en el inventario por código o categoría.
+│   └── actualizar.php   # Actualización automática del estado del inventario.
+│
+├── /admin/              # Funcionalidades exclusivas del administrador
+│   ├── usuarios.php     # Gestión de usuarios.
+│   ├── registro.php     # Registro de nuevos usuarios.
+│   ├── configuraciones.php # Configuraciones generales del sistema.
+│   └── reportes.php     # Generación de reportes (inventarios, ventas, etc.).
+│
+├── index.php            # Página de inicio (login).
+├── dashboard.php        # Panel principal del sistema tras iniciar sesión.
+├── logout.php           # Cerrar sesión.
